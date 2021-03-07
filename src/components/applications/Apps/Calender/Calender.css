@@ -1,0 +1,44 @@
+.container {
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.calender {
+  position: relative;
+  min-width: 500px;
+  min-height: 500px;
+  height: 100%;
+  width: 100%;
+
+  color: white;
+}
+.month {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.3);
+}
+.weeks {
+  position: absolute;
+  top: 20%;
+  height: 80%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  background-color: green;
+}
+.days {
+  padding: 15px 0px;
+  height: 100%;
+  text-align: center;
+  font-size: 2em;
+  width: 100%;
+  background-color: red;
+}

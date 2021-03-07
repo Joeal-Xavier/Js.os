@@ -1,0 +1,10 @@
+html,
+body {
+  overflow: hidden;
+  margin: 0%;
+  background-image: url(./wall.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  line-height: normal;
+}

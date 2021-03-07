@@ -1,0 +1,80 @@
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  z-index: 5;
+}
+.window {
+  position: relative;
+  border-radius: 5px;
+  background-color: rgba(234, 240, 240, 0.5);
+  border: 3px solid rgba(234, 240, 240, 1);
+  overflow: hidden;
+}
+.titlebar {
+  border-bottom-color: grey;
+  height: 5%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  background-color: rgba(234, 240, 240, 0.5);
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0px;
+}
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 1px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  float: right;
+}
+.actions {
+  display: block;
+  float: left;
+  margin: auto 0px;
+}
+.action {
+  padding: 5px;
+  display: inline;
+  margin: 2px;
+}
+.actionBtn {
+  padding-top: 1px;
+  border: 0.1px solid grey;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.1);
+}
+.close {
+  background-color: red;
+}
+.maximize {
+  background-color: green;
+}
+.minimize {
+  background-color: yellow;
+}
+.actionBtn:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+.actionBtn:focus {
+  outline: none;
+}
+.activeIndex {
+  z-index: 10;
+}
+.winContent {
+  height: 95%;
+  width: 100%;
+  min-height: 300px;
+  min-width: 300px;
+  position: relative;
+}
